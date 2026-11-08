@@ -62,10 +62,34 @@ function route() {
   document.querySelectorAll("#nav a").forEach(function (a) { a.classList.toggle("active", a.dataset.r === parts[0]); });
   if (parts[0] === "run") {
     if (parts[1]) return renderRun(parseInt(parts[1], 10));
-    return api("/api/runs").then(function (rs) {
-      if (rs.length) location.hash = "#/run/" + rs[0].run_id;
-      else view.innerHTML = '<div class="empty card">No runs yet. Start one from <a href="#/new">New run</a>.</div>';
-    });
+      return api("/api/runs").then(function (rs) {
+        if (rs.length) {
+          // Always show the invoice currently being processed first
+          var active = rs.find(function (r) {
+            return r.status === "running";
+          });
+      
+          // If nothing is running, show the oldest queued invoice
+          if (!active) {
+            active = rs
+              .filter(function (r) {
+                return r.status === "queued";
+              })
+              .sort(function (a, b) {
+                return a.run_id - b.run_id
+              })[0];
+          }
+      
+          // Otherwise show the latest completed run
+          if (!active) active = rs[0];
+      
+          location.hash = "#/run/" + active.run_id;
+        } else {
+          view.innerHTML =
+            '<div class="empty card">No runs yet. Start one from <a href="#/new">New run</a>.</div>';
+        }
+      });
+;
   }
   if (parts[0] === "dashboard") return renderDashboard();
   if (parts[0] === "queue") return renderQueue();
