@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: ap-autopilot
+    runtime: docker
+    plan: free
+    healthCheckPath: /api/health
+    envVars:
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: DEMO_STAGE_DELAY
+        value: "0.5"

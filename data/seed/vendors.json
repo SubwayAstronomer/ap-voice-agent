@@ -1,0 +1,89 @@
+[
+  {
+    "vendor_id": "V001",
+    "legal_name": "Apex Industrial Supplies Pvt Ltd",
+    "aliases": [
+      "Apex Industrial",
+      "AIS"
+    ],
+    "gstin": "21AAFCA3317K1Z2",
+    "bank_account": "50200012345678",
+    "bank_ifsc": "HDFC0001234",
+    "bank_name": "HDFC Bank, Bhubaneswar",
+    "address": "22 Rasulgarh Industrial Area, Bhubaneswar, Odisha 751010",
+    "state_code": "21",
+    "status": "active"
+  },
+  {
+    "vendor_id": "V002",
+    "legal_name": "Bharat Bearings and Transmission Co",
+    "aliases": [
+      "Bharat Bearings",
+      "BBT"
+    ],
+    "gstin": "27AABFB6620M1ZF",
+    "bank_account": "001105022871",
+    "bank_ifsc": "ICIC0000011",
+    "bank_name": "ICICI Bank, Pune",
+    "address": "Gat No 118, Chakan MIDC, Pune, Maharashtra 410501",
+    "state_code": "27",
+    "status": "active"
+  },
+  {
+    "vendor_id": "V003",
+    "legal_name": "Coastal Refractories Ltd",
+    "aliases": [
+      "Coastal Refractories"
+    ],
+    "gstin": "19AACCC9054P1Z0",
+    "bank_account": "3398201004471",
+    "bank_ifsc": "CNRB0003398",
+    "bank_name": "Canara Bank, Durgapur",
+    "address": "NH-2, Bamunara Industrial Park, Durgapur, West Bengal 713212",
+    "state_code": "19",
+    "status": "active"
+  },
+  {
+    "vendor_id": "V004",
+    "legal_name": "Deccan Safety and Consumables",
+    "aliases": [
+      "Deccan Safety",
+      "DSC"
+    ],
+    "gstin": "36AAJFD2271Q1ZZ",
+    "bank_account": "62118870021",
+    "bank_ifsc": "SBIN0020871",
+    "bank_name": "State Bank of India, Hyderabad",
+    "address": "4-1-77 Balanagar, Hyderabad, Telangana 500037",
+    "state_code": "36",
+    "status": "active"
+  },
+  {
+    "vendor_id": "V005",
+    "legal_name": "Eastern Hydraulics Pvt Ltd",
+    "aliases": [
+      "Eastern Hydraulics"
+    ],
+    "gstin": "21AADCE5512L1ZX",
+    "bank_account": "918020055501",
+    "bank_ifsc": "UTIB0000102",
+    "bank_name": "Axis Bank, Cuttack",
+    "address": "Jagatpur Industrial Estate, Cuttack, Odisha 754021",
+    "state_code": "21",
+    "status": "active"
+  },
+  {
+    "vendor_id": "V006",
+    "legal_name": "Falcon Electricals",
+    "aliases": [
+      "Falcon Electric"
+    ],
+    "gstin": "20AAHFF7734D1ZT",
+    "bank_account": "1120001093340",
+    "bank_ifsc": "PUNB0112000",
+    "bank_name": "Punjab National Bank, Jamshedpur",
+    "address": "Adityapur Industrial Area, Jamshedpur, Jharkhand 831013",
+    "state_code": "20",
+    "status": "active"
+  }
+]

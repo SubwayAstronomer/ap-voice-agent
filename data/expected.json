@@ -1,0 +1,115 @@
+[
+  {
+    "file": "01_happy_path.pdf",
+    "scenario": "Happy path: clean text PDF, explicit PO, exact match",
+    "template": "A",
+    "format": "text",
+    "invoice_no": "AIS/26-27/0418",
+    "total": 144019.0,
+    "decision": "APPROVE",
+    "codes": []
+  },
+  {
+    "file": "02_split_A.pdf",
+    "scenario": "Edge 1a: PO-1043 first delivery, 60 of 100 units",
+    "template": "B",
+    "format": "text",
+    "invoice_no": "BBT-7731",
+    "total": 218772.0,
+    "decision": "APPROVE",
+    "codes": []
+  },
+  {
+    "file": "03_split_B.pdf",
+    "scenario": "Edge 1b: PO-1043 second delivery, remaining 40 units",
+    "template": "B",
+    "format": "text",
+    "invoice_no": "BBT-7764",
+    "total": 145848.0,
+    "decision": "APPROVE",
+    "codes": []
+  },
+  {
+    "file": "04_split_C_overbill.pdf",
+    "scenario": "Edge 1c: 20 more bearings on a PO that is already fully billed",
+    "template": "B",
+    "format": "text",
+    "invoice_no": "BBT-7790",
+    "total": 57820.0,
+    "decision": "HOLD",
+    "codes": [
+      "QTY_EXCEEDS_GRN",
+      "PO_OVERBILLED"
+    ]
+  },
+  {
+    "file": "05_original_0142.pdf",
+    "scenario": "Edge 2a: the original refractory invoice (run before 06)",
+    "template": "C",
+    "format": "text",
+    "invoice_no": "INV/2026/0142",
+    "total": 374768.0,
+    "decision": "APPROVE",
+    "codes": []
+  },
+  {
+    "file": "06_dup_scan_142.pdf",
+    "scenario": "Edge 2b: same invoice re-sent as a scan with the number reformatted",
+    "template": "C",
+    "format": "scan",
+    "invoice_no": "INV-2026-142",
+    "total": 374768.0,
+    "decision": "REJECT",
+    "codes": [
+      "DUPLICATE"
+    ]
+  },
+  {
+    "file": "07_no_po_scan.pdf",
+    "scenario": "Edge 3a: scanned, tax-inclusive, no PO reference; one clear PO",
+    "template": "D",
+    "format": "scan",
+    "invoice_no": "DSC/1187",
+    "total": 129800.0,
+    "decision": "APPROVE",
+    "codes": [
+      "PO_INFERRED"
+    ]
+  },
+  {
+    "file": "08_no_po_ambiguous.pdf",
+    "scenario": "Edge 3b: no PO reference and two identical repeat-order POs",
+    "template": "D",
+    "format": "scan",
+    "invoice_no": "DSC/1203",
+    "total": 62540.0,
+    "decision": "HOLD",
+    "codes": [
+      "PO_AMBIGUOUS"
+    ]
+  },
+  {
+    "file": "09_bank_changed.pdf",
+    "scenario": "Edge 4: perfect PO and GRN match, but a new bank account",
+    "template": "A",
+    "format": "text",
+    "invoice_no": "AIS/26-27/0436",
+    "total": 136290.0,
+    "decision": "HOLD",
+    "codes": [
+      "BANK_CHANGED"
+    ]
+  },
+  {
+    "file": "10_price_variance.pdf",
+    "scenario": "Backup: valve priced 1.5% above PO, inside the 2% tolerance",
+    "template": "A",
+    "format": "text",
+    "invoice_no": "AIS/26-27/0441",
+    "total": 120076.8,
+    "decision": "APPROVE",
+    "codes": [
+      "PRICE_WITHIN_TOLERANCE"
+    ]
+  }
+]

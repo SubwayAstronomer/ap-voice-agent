@@ -1,0 +1,311 @@
+[
+  {
+    "po_number": "PO-1001",
+    "vendor_id": "V001",
+    "po_date": "2026-09-22",
+    "lines": [
+      {
+        "line_no": 1,
+        "item_code": "HYD-HOSE-12",
+        "description": "Hydraulic hose assembly 1/2 in x 2 m",
+        "hsn": "4009",
+        "qty": 40,
+        "uom": "Nos",
+        "unit_price": 1850.0,
+        "gst_rate": 18
+      },
+      {
+        "line_no": 2,
+        "item_code": "GAUGE-250",
+        "description": "Pressure gauge 0-250 bar glycerine filled",
+        "hsn": "9026",
+        "qty": 12,
+        "uom": "Nos",
+        "unit_price": 2400.0,
+        "gst_rate": 18
+      },
+      {
+        "line_no": 3,
+        "item_code": "BOLT-M16",
+        "description": "Hex bolt M16 x 80 HT 8.8 with nut",
+        "hsn": "7318",
+        "qty": 500,
+        "uom": "Nos",
+        "unit_price": 38.5,
+        "gst_rate": 18
+      }
+    ],
+    "status": "open",
+    "currency": "INR"
+  },
+  {
+    "po_number": "PO-1002",
+    "vendor_id": "V001",
+    "po_date": "2026-09-25",
+    "lines": [
+      {
+        "line_no": 1,
+        "item_code": "GRS-EP2-18",
+        "description": "Grease lithium complex EP2 18 kg bucket",
+        "hsn": "2710",
+        "qty": 20,
+        "uom": "Nos",
+        "unit_price": 4200.0,
+        "gst_rate": 18
+      },
+      {
+        "line_no": 2,
+        "item_code": "SLING-20",
+        "description": "Wire rope sling 20 mm x 3 m",
+        "hsn": "7312",
+        "qty": 10,
+        "uom": "Nos",
+        "unit_price": 3150.0,
+        "gst_rate": 18
+      }
+    ],
+    "status": "open",
+    "currency": "INR"
+  },
+  {
+    "po_number": "PO-1003",
+    "vendor_id": "V001",
+    "po_date": "2026-09-30",
+    "lines": [
+      {
+        "line_no": 1,
+        "item_code": "SOL-VLV-24",
+        "description": "Pneumatic solenoid valve 1/2 in 24 VDC",
+        "hsn": "8481",
+        "qty": 15,
+        "uom": "Nos",
+        "unit_price": 5600.0,
+        "gst_rate": 18
+      },
+      {
+        "line_no": 2,
+        "item_code": "PU-TUBE-8",
+        "description": "PU tube 8 mm x 100 m roll",
+        "hsn": "3917",
+        "qty": 6,
+        "uom": "Nos",
+        "unit_price": 2750.0,
+        "gst_rate": 18
+      }
+    ],
+    "status": "open",
+    "currency": "INR"
+  },
+  {
+    "po_number": "PO-1043",
+    "vendor_id": "V002",
+    "po_date": "2026-09-15",
+    "lines": [
+      {
+        "line_no": 1,
+        "item_code": "BRG-6310",
+        "description": "Deep groove ball bearing 6310 2RS",
+        "hsn": "8482",
+        "qty": 100,
+        "uom": "Nos",
+        "unit_price": 2450.0,
+        "gst_rate": 18
+      },
+      {
+        "line_no": 2,
+        "item_code": "SLV-H310",
+        "description": "Bearing adapter sleeve H310",
+        "hsn": "8483",
+        "qty": 100,
+        "uom": "Nos",
+        "unit_price": 640.0,
+        "gst_rate": 18
+      }
+    ],
+    "status": "open",
+    "currency": "INR"
+  },
+  {
+    "po_number": "PO-2001",
+    "vendor_id": "V003",
+    "po_date": "2026-09-10",
+    "lines": [
+      {
+        "line_no": 1,
+        "item_code": "MC-BRK-150",
+        "description": "Magnesia carbon brick MC-10 150 mm",
+        "hsn": "6902",
+        "qty": 1200,
+        "uom": "Nos",
+        "unit_price": 168.0,
+        "gst_rate": 18
+      },
+      {
+        "line_no": 2,
+        "item_code": "CAST-HA70",
+        "description": "High alumina castable 70 pct 25 kg bag",
+        "hsn": "3816",
+        "qty": 80,
+        "uom": "Bags",
+        "unit_price": 1450.0,
+        "gst_rate": 18
+      }
+    ],
+    "status": "open",
+    "currency": "INR"
+  },
+  {
+    "po_number": "PO-3001",
+    "vendor_id": "V004",
+    "po_date": "2026-09-28",
+    "lines": [
+      {
+        "line_no": 1,
+        "item_code": "PPE-HLM",
+        "description": "Safety helmet with ratchet ISI marked",
+        "hsn": "6506",
+        "qty": 200,
+        "uom": "Nos",
+        "unit_price": 250.0,
+        "gst_rate": 18
+      },
+      {
+        "line_no": 2,
+        "item_code": "PPE-GLV",
+        "description": "Leather safety gloves",
+        "hsn": "4203",
+        "qty": 300,
+        "uom": "Pairs",
+        "unit_price": 140.0,
+        "gst_rate": 18
+      },
+      {
+        "line_no": 3,
+        "item_code": "PPE-GGL",
+        "description": "Safety goggles anti-fog",
+        "hsn": "9004",
+        "qty": 150,
+        "uom": "Nos",
+        "unit_price": 120.0,
+        "gst_rate": 18
+      }
+    ],
+    "status": "open",
+    "currency": "INR"
+  },
+  {
+    "po_number": "PO-3002",
+    "vendor_id": "V004",
+    "po_date": "2026-10-01",
+    "lines": [
+      {
+        "line_no": 1,
+        "item_code": "CW-WHT-25",
+        "description": "Cotton waste white 25 kg bale",
+        "hsn": "5202",
+        "qty": 40,
+        "uom": "Nos",
+        "unit_price": 1100.0,
+        "gst_rate": 18
+      },
+      {
+        "line_no": 2,
+        "item_code": "WG-SH11",
+        "description": "Welding glass shade 11",
+        "hsn": "7007",
+        "qty": 500,
+        "uom": "Nos",
+        "unit_price": 18.0,
+        "gst_rate": 18
+      }
+    ],
+    "status": "open",
+    "currency": "INR"
+  },
+  {
+    "po_number": "PO-3003",
+    "vendor_id": "V004",
+    "po_date": "2026-10-03",
+    "lines": [
+      {
+        "line_no": 1,
+        "item_code": "CW-WHT-25",
+        "description": "Cotton waste white 25 kg bale",
+        "hsn": "5202",
+        "qty": 40,
+        "uom": "Nos",
+        "unit_price": 1100.0,
+        "gst_rate": 18
+      },
+      {
+        "line_no": 2,
+        "item_code": "WG-SH11",
+        "description": "Welding glass shade 11",
+        "hsn": "7007",
+        "qty": 500,
+        "uom": "Nos",
+        "unit_price": 18.0,
+        "gst_rate": 18
+      }
+    ],
+    "status": "open",
+    "currency": "INR"
+  },
+  {
+    "po_number": "PO-3004",
+    "vendor_id": "V004",
+    "po_date": "2026-10-05",
+    "lines": [
+      {
+        "line_no": 1,
+        "item_code": "FE-ABC-6",
+        "description": "Fire extinguisher ABC 6 kg",
+        "hsn": "8424",
+        "qty": 20,
+        "uom": "Nos",
+        "unit_price": 2650.0,
+        "gst_rate": 18
+      }
+    ],
+    "status": "open",
+    "currency": "INR"
+  },
+  {
+    "po_number": "PO-4001",
+    "vendor_id": "V005",
+    "po_date": "2026-10-02",
+    "lines": [
+      {
+        "line_no": 1,
+        "item_code": "HYD-PMP-40",
+        "description": "Hydraulic gear pump 40 cc",
+        "hsn": "8413",
+        "qty": 4,
+        "uom": "Nos",
+        "unit_price": 38500.0,
+        "gst_rate": 18
+      }
+    ],
+    "status": "open",
+    "currency": "INR"
+  },
+  {
+    "po_number": "PO-5001",
+    "vendor_id": "V006",
+    "po_date": "2026-10-06",
+    "lines": [
+      {
+        "line_no": 1,
+        "item_code": "CBL-4C-16",
+        "description": "Armoured cable 4 core 16 sq mm",
+        "hsn": "8544",
+        "qty": 500,
+        "uom": "Mtr",
+        "unit_price": 412.0,
+        "gst_rate": 18
+      }
+    ],
+    "status": "open",
+    "currency": "INR"
+  }
+]
