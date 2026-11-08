@@ -1,0 +1,34 @@
+# All business thresholds live here so a finance team can tune them
+# without touching code. Amounts are in INR.
+
+buyer_gstin_state: "21"          # Odisha; decides CGST+SGST vs IGST
+
+extraction:
+  min_confidence: 0.85            # key field below this -> HOLD LOW_CONFIDENCE
+  mandatory_fields: [invoice_no, invoice_date, supplier_gstin, total]
+  key_fields: [invoice_no, invoice_date, supplier_gstin, total, po_ref]
+
+validation:
+  total_tolerance_inr: 1.00       # sum(lines) + tax vs stated total
+  line_tolerance_inr: 1.00        # qty x rate vs line amount
+
+vendor:
+  fuzzy_name_min: 90              # rapidfuzz token_set_ratio
+
+duplicates:
+  near_total_pct: 0.5             # same vendor, total within 0.5 pct ...
+  near_days: 30                   # ... and dated within 30 days
+
+po_inference:
+  min_score: 60                   # best candidate must score at least this
+  min_margin: 10                  # and beat the runner-up by this many points
+
+matching:
+  line_match_min: 70              # fuzzy score to pair an invoice line with a PO line
+  price_tolerance_pct: 2.0        # unit price over PO by more than this -> HOLD
+
+approval:
+  auto_approve_limit_inr: 500000  # above this, clean invoices still need a manager
+
+demo:
+  stage_delay_seconds: 0.5        # pause between stages so the live view is watchable
